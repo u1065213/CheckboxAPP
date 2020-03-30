@@ -26,26 +26,26 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="TextView"
+        android:text="結果"
         android:textColor="@color/colorPrimary"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintStart_toStartOf="@+id/btnOK"
+        app:layout_constraintTop_toBottomOf="@+id/btnOK" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/ch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="數學"
         android:textSize="30sp"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox2"
+        app:layout_constraintEnd_toStartOf="@+id/ch2"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/ch2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
@@ -53,11 +53,11 @@
         android:layout_marginTop="32dp"
         android:text="英文"
         android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintStart_toEndOf="@+id/ch1"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/ch3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -65,12 +65,12 @@
         android:layout_marginRight="52dp"
         android:text="自然"
         android:textSize="30sp"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox4"
-        app:layout_constraintStart_toStartOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintEnd_toStartOf="@+id/ch4"
+        app:layout_constraintStart_toStartOf="@+id/ch1"
+        app:layout_constraintTop_toBottomOf="@+id/ch1" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/ch4"
         android:layout_width="96dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
@@ -78,20 +78,21 @@
         android:layout_marginTop="32dp"
         android:text="國文"
         android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@+id/checkBox3"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintStart_toEndOf="@+id/ch3"
+        app:layout_constraintTop_toBottomOf="@+id/ch2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnOK"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:onClick="btnOK"
         android:text="確定"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/checkBox3"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+        app:layout_constraintStart_toStartOf="@+id/ch3"
+        app:layout_constraintTop_toBottomOf="@+id/ch3" />
 
 </android.support.constraint.ConstraintLayout>
